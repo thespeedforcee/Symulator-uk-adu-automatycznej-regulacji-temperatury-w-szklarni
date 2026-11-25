@@ -1,0 +1,1 @@
+# Symulator-uk-adu-automatycznej-regulacji-temperatury-w-szklarni
