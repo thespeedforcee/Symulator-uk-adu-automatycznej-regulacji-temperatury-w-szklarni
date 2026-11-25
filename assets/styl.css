@@ -1,0 +1,63 @@
+/* Dash automatycznie ładuje pliki z katalogu assets/ */
+body {
+  margin: 0;
+  background: #f4f3f0;
+  color: #0b0b0b;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.strona { max-width: 1500px; margin: 0 auto; padding: 16px 24px 40px; }
+
+header h1 { margin: 8px 0 4px; font-size: 26px; }
+header p  { margin: 0 0 16px; color: #52514e; font-size: 14px; line-height: 1.5; }
+
+.uklad { display: grid; grid-template-columns: 360px 1fr; gap: 20px; align-items: start; }
+@media (max-width: 900px) { .uklad { grid-template-columns: 1fr; } }
+
+.panel-sterowania { display: flex; flex-direction: column; gap: 12px; }
+
+.sekcja {
+  background: #fcfcfb;
+  border: 1px solid #e6e5e1;
+  border-radius: 10px;
+  padding: 10px 14px 6px;
+  margin: 0;
+}
+.sekcja legend { font-weight: 600; font-size: 14px; padding: 0 4px; }
+
+.suwak { margin: 6px 0 18px; }
+.suwak label { display: block; font-size: 13px; color: #52514e; margin-bottom: 2px; }
+
+.opis { font-size: 12.5px; color: #52514e; line-height: 1.45; margin: 6px 0 10px; }
+.sekcja > label { display: block; font-size: 13px; color: #52514e; margin: 4px 0 2px; }
+
+.przycisk {
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #2a78d6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.przycisk:hover { background: #256abf; }
+
+.wykres { margin-top: 4px; }
+
+.panel-wynikow {
+  background: #fcfcfb;
+  border: 1px solid #e6e5e1;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.kafelki {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.kafelek { border: 1px solid #e6e5e1; border-radius: 8px; padding: 8px 12px; background: #fff; }
+.kafelek-tytul   { font-size: 12px; color: #52514e; }
+.kafelek-wartosc { font-size: 22px; font-weight: 600; font-variant-numeric: tabular-nums; }
