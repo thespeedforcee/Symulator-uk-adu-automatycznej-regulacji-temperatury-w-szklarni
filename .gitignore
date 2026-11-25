@@ -1,0 +1,15 @@
+# Środowisko wirtualne Pythona
+.venv/
+venv/
+
+# Pliki tymczasowe Pythona
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Pliki IDE / systemu
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*.docx
